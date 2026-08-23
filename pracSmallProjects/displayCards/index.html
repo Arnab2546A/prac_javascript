@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetish Describe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-950 px-4 py-10 text-white">
+
+    <!-- Page Container -->
+    <div class="mx-auto max-w-5xl">
+
+        <!-- Heading -->
+        <div class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-white">
+                Create Profile
+            </h1>
+
+            <p class="mt-2 text-gray-400">
+                Fill in the details to create a profile card.
+            </p>
+        </div>
+
+
+        <!-- ================= FORM ================= -->
+        <div class="mx-auto max-w-md rounded-2xl border border-gray-800
+                    bg-gray-900 p-6 shadow-xl">
+
+            <form id="profileForm" class="space-y-5">
+
+                <!-- Name -->
+                <div>
+                    <label
+                        for="name"
+                        class="mb-2 block text-sm font-medium text-gray-300"
+                    >
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        class="w-full rounded-lg border border-gray-700
+                               bg-gray-800 px-4 py-2.5 text-white
+                               placeholder-gray-500 outline-none
+                               transition focus:border-blue-500
+                               focus:ring-2 focus:ring-blue-500/20"
+                    >
+
+                    <p
+                        id="nameError"
+                        class="mt-1.5 hidden text-sm text-red-400"
+                    >
+                        Please enter your name.
+                    </p>
+                </div>
+
+
+                <!-- Gender -->
+                <div>
+                    <label
+                        for="gender"
+                        class="mb-2 block text-sm font-medium text-gray-300"
+                    >
+                        Gender
+                    </label>
+
+                    <select
+                        id="gender"
+                        class="w-full rounded-lg border border-gray-700
+                               bg-gray-800 px-4 py-2.5 text-white
+                               outline-none transition
+                               focus:border-blue-500
+                               focus:ring-2 focus:ring-blue-500/20"
+                    >
+                        <option value="" class="bg-gray-800" selected disabled>
+                            Select gender
+                        </option>
+
+                        <option value="Male" class="bg-gray-800">
+                            Male
+                        </option>
+
+                        <option value="Female" class="bg-gray-800">
+                            Female
+                        </option>
+
+                        <option value="Other" class="bg-gray-800">
+                            Other
+                        </option>
+                    </select>
+
+                    <p
+                        id="genderError"
+                        class="mt-1.5 hidden text-sm text-red-400"
+                    >
+                        Please select your gender.
+                    </p>
+                </div>
+
+
+                <!-- Interests -->
+                <div>
+                    <label
+                        for="interests"
+                        class="mb-2 block text-sm font-medium text-gray-300"
+                    >
+                        Interests
+                    </label>
+
+                    <textarea
+                        id="interests"
+                        rows="4"
+                        placeholder="Describe your interests..."
+                        class="w-full resize-none rounded-lg border
+                               border-gray-700 bg-gray-800 px-4 py-2.5
+                               text-white placeholder-gray-500 outline-none
+                               transition focus:border-blue-500
+                               focus:ring-2 focus:ring-blue-500/20"
+                    ></textarea>
+
+                    <p
+                        id="interestsError"
+                        class="mt-1.5 hidden text-sm text-red-400"
+                    >
+                        Please describe your interests.
+                    </p>
+                </div>
+
+
+                <!-- Submit -->
+                <button
+                    type="submit"
+                    class="w-full rounded-lg bg-blue-600 px-4 py-2.5
+                           font-semibold text-white transition
+                           hover:bg-blue-700 focus:outline-none
+                           focus:ring-2 focus:ring-blue-500
+                           focus:ring-offset-2 focus:ring-offset-gray-900"
+                >
+                    Add Profile
+                </button>
+
+            </form>
+        </div>
+
+
+        <!-- ================= CARDS ================= -->
+        <div
+            id="cardsContainer"
+            class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+
+
+
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
