@@ -143,7 +143,7 @@ const workPage={
         "text-gray-300"
     );
 
-    interestsHeading.textContent = "Interests";
+    interestsHeading.textContent = "Fantasies";
 
 
     // Interests description
